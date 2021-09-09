@@ -48,13 +48,16 @@ h3 {
 
 .card.select {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 #game div.card {
   display: inline-flex;
   position: relative;
   transition: transform 1s;
+  -webkit-transition: transform 1s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 #game div.placeholder {
@@ -62,12 +65,14 @@ h3 {
   height: 15vh;
   width: 15vh;
   margin: 10px;
+  border-radius: 2px;
 }
 
 #game div.front-side {
   display: inline-flex;
   position: absolute;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   left: 0;
   top: 0;
   border: 2px solid #000000;
@@ -76,12 +81,14 @@ h3 {
   width: 15vh;
   margin: 10px;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 #game div.back-side {
   display: inline-flex;
   position: absolute;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   left: 0;
   top: 0;
   border: 2px solid #000000;
